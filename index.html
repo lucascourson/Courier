@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Courier App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <form id="deliveryForm">
+       <h1>Courier Request Form</h1>
+        <input type="text" id="pickup" placeholder="Pickup Location" required>
+        <input type="text" id="dropoff" placeholder="Dropoff Location" required>
+        <input type="tel" id="phone" placeholder="Phone Number">
+        <textarea id="description" placeholder="Item Description" required></textarea>
+        <button type="submit">Submit Request</button>
+    </form>
+
+    <div id="confirmation"></div>
+
+    <div class="navigation">
+  <a id="navButton" href="#">
+    <button type="button" id="navBtnLabel">Loading...</button>
+  </a>
+</div>
+
+  </main>
+   <a href="auth.html">
+   <button id="logoutBtn" style="display:none;">Log Out</button>
+</a>
+
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

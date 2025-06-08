@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login or Sign Up</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <form id="signup-form">
+      <h1>Sign Up</h1>
+      <input type="email" id="signup-email" placeholder="Email" required>
+      <input type="password" id="signup-password" placeholder="Password" required>
+
+      <label><input type="radio" name="role" value="customer" checked> Customer</label>
+      <label><input type="radio" name="role" value="courier"> Courier</label>
+
+      <button type="submit">Sign Up</button>
+    </form>
+
+    <form id="login-form">
+      <h1>Log In</h1>
+      <input type="email" id="login-email" placeholder="Email" required>
+      <input type="password" id="login-password" placeholder="Password" required>
+      <button type="submit">Log In</button>
+    </form>
+
+  </main>
+
+  <script type="module" src="auth.js"></script>
+</body>
+</html>
+

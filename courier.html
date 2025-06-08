@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Courier Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    .request-item {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+    #logoutBtn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      padding: 4px;
+      font-size: 0.9rem;
+      width: auto;
+      min-width: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="logoutBtn">Logout</button>
+
+  <main>
+    <h1>Courier Dashboard</h1>
+<div class="navigation">
+  <a href="index.html">
+    <button type="button">Make a Request</button>
+  </a>
+</div>
+
+
+    <section>
+      <h2>Available Requests</h2>
+      <div id="requestList"></div>
+    </section>
+
+    <section>
+      <h2>In Progress</h2>
+      <div id="inProgressList"></div>
+    </section>
+  </main>
+
+  <script type="module" src="auth.js"></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
